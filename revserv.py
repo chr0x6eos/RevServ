@@ -70,7 +70,7 @@ class RevServ:
             access = self.path.strip("/")
             if access != "" and str.isdigit(access):
                 # Example: /443 -> reverse-shell listens on port 443
-                print(f"Generate reverse-shell for port {access}!")
+                print(f"Generated reverse-shell payload for port {access}!")
                 file = gen_rev(port=int(access))
             else:
                 file = gen_rev()
