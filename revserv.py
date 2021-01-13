@@ -26,7 +26,7 @@ Github:     https://github.com/Chr0x6eOs
 ____________________________________________________________________________
     """)
 
-def gen_rev(ip:str="", port:int=433) -> str:
+def gen_rev(ip:str="", port:int=443) -> str:
     # Create reverse-shell payload
     """
     Generate bash-reverse-shell payload
