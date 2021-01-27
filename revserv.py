@@ -92,7 +92,7 @@ class RevServ:
             if self.port_in_use(self.server_port):
                 raise Exception(f"Port {self.server_port} in use!")
             handler = self.RequestHandler
-            print(f"[*] Serving bash-reverse-shell on 0.0.0.0:{self.server_port}...")
+            print(f"[*] Serving bash-reverse-shell on {self.get_ip()}:{self.server_port}...")
             with http.server.HTTPServer(("",self.server_port), handler) as httpd:
                 httpd.serve_forever()
         except KeyboardInterrupt:                                                                                     
